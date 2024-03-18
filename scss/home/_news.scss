@@ -1,0 +1,46 @@
+#news {
+    padding: 88px 0;
+    h1 {
+        font-size: 40px;
+        font-weight: 500;
+        letter-spacing: -1.6px;
+        margin-bottom: 88px;
+    }
+    .news__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 88px;
+        &--card {
+            width: 417px;
+            img {
+                margin-bottom: 50px;
+            }
+            &-bottom {
+                > div {
+                    display: flex;
+                    margin-bottom: 20px;
+                    p {
+                        color: $color-brand;
+                        font-weight: 500;
+                        &:nth-child(1) {
+                            border-right: 2px solid $color-brand;
+                            padding-right: 10px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                > p {
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .news-button {
+        @extend %button2;
+        border: 1px solid $color-brand;
+        color: $color-brand;
+        
+    }
+}

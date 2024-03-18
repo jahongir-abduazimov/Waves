@@ -336,7 +336,7 @@ body {
   margin: 0 auto;
 }
 
-#intro .container .intro__buttons-btn, header .nav__button {
+#contact .contact-inputs form button, #intro .container .intro__buttons-btn, header .nav__button {
   background: #8447E9;
   color: white;
   border: none;
@@ -346,11 +346,11 @@ body {
   cursor: pointer;
   transition: all 0.2s ease;
 }
-#intro .container .intro__buttons-btn:hover, header .nav__button:hover {
+#contact .contact-inputs form button:hover, #intro .container .intro__buttons-btn:hover, header .nav__button:hover {
   background: #BDB0EC;
 }
 
-#project .project-button, #service .container-fluid .service-button {
+#news .news-button, #project .project-button, #service .container-fluid .service-button {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -360,18 +360,24 @@ body {
   transition: all 0.3s ease;
   font-weight: 500;
 }
-#project .project-button path, #service .container-fluid .service-button path {
+#news .news-button path, #project .project-button path, #service .container-fluid .service-button path {
   transition: all 0.3s ease;
 }
-#project .project-button:hover, #service .container-fluid .service-button:hover {
+#news .news-button:hover, #project .project-button:hover, #service .container-fluid .service-button:hover {
   background-color: #8447E9;
   color: #fff;
 }
-#project .project-button:hover path, #service .container-fluid .service-button:hover path {
+#news .news-button:hover path, #project .project-button:hover path, #service .container-fluid .service-button:hover path {
   fill: #fff;
   transition: all 0.3s ease;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 100;
+}
 header .nav {
   display: flex;
   height: 92px;
@@ -392,8 +398,49 @@ header .nav__button {
   padding: 12px 24px;
 }
 
+footer {
+  margin-top: 290px;
+  padding: 332px 0 100px 0;
+  background: #0F0F0F;
+  position: relative;
+}
+footer .top-img {
+  width: 1073px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 520px;
+  left: 220px;
+}
+footer .footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+footer .footer__wrapper img {
+  width: 177px;
+}
+footer .footer__wrapper > div {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+footer .footer__wrapper > div a {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+footer .footer-icon {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: end;
+  padding-bottom: 140px;
+  border-bottom: 1px solid #BDB0EC;
+}
+
 #intro {
-  padding: 158px 0 100px 0;
+  padding: 200px 0 100px 0;
 }
 #intro .container {
   width: 698px;
@@ -569,6 +616,132 @@ header .nav__button {
   color: #fff;
 }
 
-footer {
-  width: 100%;
+#customer {
+  padding: 112px 0;
+}
+#customer h1 {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -1.6px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 80px;
+}
+#customer .customer__wrapper {
+  width: 1040px;
+  padding: 32px;
+  height: 484px;
+  background: #E1DBF6;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+}
+#customer .customer__wrapper--center {
+  width: 517px;
+}
+#customer .customer__wrapper--center-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 48px;
+}
+#customer .customer__wrapper--center-name {
+  font-weight: 500;
+  color: #8447E9;
+  margin-bottom: 4px;
+}
+#customer .customer__wrapper--center > div {
+  font-size: 12px;
+  display: flex;
+  gap: 8px;
+}
+#customer .customer__wrapper--center > div span:nth-child(1) {
+  font-weight: 500;
+}
+#customer .customer__wrapper .customer-img {
+  position: absolute;
+  right: 36px;
+  top: 32px;
+}
+
+#news {
+  padding: 88px 0;
+}
+#news h1 {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -1.6px;
+  margin-bottom: 88px;
+}
+#news .news__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 88px;
+}
+#news .news__wrapper--card {
+  width: 417px;
+}
+#news .news__wrapper--card img {
+  margin-bottom: 50px;
+}
+#news .news__wrapper--card-bottom > div {
+  display: flex;
+  margin-bottom: 20px;
+}
+#news .news__wrapper--card-bottom > div p {
+  color: #8447E9;
+  font-weight: 500;
+}
+#news .news__wrapper--card-bottom > div p:nth-child(1) {
+  border-right: 2px solid #8447E9;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+#news .news__wrapper--card-bottom > p {
+  font-size: 24px;
+  font-weight: 500;
+}
+#news .news-button {
+  border: 1px solid #8447E9;
+  color: #8447E9;
+}
+
+#contact {
+  padding: 180px 0;
+}
+#contact h1 {
+  font-size: 62px;
+  font-weight: 500;
+  letter-spacing: -3.41px;
+  margin-bottom: 40px;
+}
+#contact p {
+  width: 738px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 80px;
+}
+#contact p > span {
+  color: #8447E9;
+  cursor: pointer;
+}
+#contact .contact-inputs {
+  width: 519px;
+}
+#contact .contact-inputs form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+#contact .contact-inputs form input {
+  border: none;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #D9D9D9;
+  outline: none;
+  font-size: 24px;
+}
+#contact .contact-inputs form button {
+  padding: 20px 32px;
+  margin-top: 40px;
 }/*# sourceMappingURL=style.css.map */

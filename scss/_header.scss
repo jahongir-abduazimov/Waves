@@ -1,24 +1,30 @@
 header {
-    .nav {
-        display: flex;
-        height: 92px;
-        align-items: center;
-        justify-content: space-between;
-        &__list {
-            display: flex;
-            gap: 60px;
-            list-style-type: none;
-            &--item {
-                &-link {
-                    text-decoration: none;
-                    color: #000;
-                    font-weight: 500;
-                }
-            }
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 100;
+  .nav {
+    display: flex;
+    height: 92px;
+    align-items: center;
+    justify-content: space-between;
+    &__list {
+      display: flex;
+      gap: 60px;
+      list-style-type: none;
+      &--item {
+        &-link {
+          text-decoration: none;
+          color: #000;
+          font-weight: 500;
         }
-        &__button {
-            @extend %button;
-            padding: 12px 24px;
-        }
+      }
     }
+    &__button {
+      @extend %button;
+      padding: 12px 24px;
+    }
+  }
 }
+
+
