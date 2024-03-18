@@ -1,0 +1,48 @@
+#project {
+    .project-title {
+        color: #F5F5F5;
+        font-weight: 600;
+    }
+    h1 {
+        width: 858px;
+        font-size: 40;
+        font-weight: 500;
+        color: #F5F5F5;
+        letter-spacing: -1.6px;
+        margin-bottom: 90px;
+    }
+    padding: 136px 0;
+    background: $color-brand;
+    .project__cards {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 60px;
+        margin-bottom: 88px;
+        &-card {
+            width: 522px;
+            height: 412px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                h2 {
+                    color: #F5F5F5;
+                    font-size: 32px;
+                    font-weight: 600;
+                }
+                p {
+                    color: #BDB0EC;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .project-button {
+        @extend %button2;
+        border: 1px solid #fff;
+        color: #fff;
+    }
+}
